@@ -6,7 +6,7 @@ let score = 0;
 let targets = [];
 let difficulty = { speed: 2, size: 40, spawnRate: 2000 };
 let gameInterval, timerInterval;
-let timeLeft = 60;
+let timeLeft = 45;
 
 function startGame(mode) {
     clearInterval(gameInterval);
@@ -18,7 +18,7 @@ function startGame(mode) {
     else if (mode === 'hard') difficulty = { speed: 6, size: 20, spawnRate: 1000 };
     
     score = 0;
-    timeLeft = 60;
+    timeLeft = 45;
     document.getElementById("score").innerText = score;
     document.getElementById("timer").innerText = timeLeft;
     targets = [];
